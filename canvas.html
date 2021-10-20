@@ -79,7 +79,7 @@
     			stage.removeChild(title);
     		}
     		color = colors[(index++) % colors.length];
-    	  stroke = Math.random() * 10 + 5| 0;
+    	  stroke = 10;
     		oldPt = new createjs.Point(stage.mouseX, stage.mouseY);
     		oldMidPt = oldPt.clone();
     		stage.addEventListener("stagemousemove", handleMouseMove);
@@ -89,7 +89,7 @@
     		if (!event.primary) { return; }
     		var midPt = new createjs.Point(oldPt.x + stage.mouseX >> 1, oldPt.y + stage.mouseY >> 1);
 
-    		drawingCanvas.graphics.clear().setStrokeStyle(stroke, 'round', 'round').beginStroke(color).moveTo(midPt.x, midPt.y).curveTo(oldPt.x, oldPt.y, oldMidPt.x, oldMidPt.y);
+    		drawingCanvas.graphics.clear().setStrokeStyle(stroke, 'square', 'square').beginStroke(color).moveTo(midPt.x, midPt.y).curveTo(oldPt.x, oldPt.y, oldMidPt.x, oldMidPt.y);
 
     		oldPt.x = stage.mouseX;
     		oldPt.y = stage.mouseY;
