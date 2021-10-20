@@ -14,28 +14,61 @@ header{
   text-align: center;
 }
 
-/* unvisited link */
+.button{
+ background-color: #ddadff;
+ border: none;
+ color: white;
+ padding: 10px 20px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ margin: 4px 2px;
+ transition-duration: 0.3s;
+ cursor: pointer;
+}
+
+.lightButton{
+  background-color: #ddadff;
+  color: white;
+}
+
+.lightButton: hover {
+  background-color: #ab12e2;
+  color: white;
+}
+
+.darkButton{
+  background-color: #373fc4;
+  color: white;
+}
+
+.darkButton: hover {
+  background-color: #4b08af;
+  color: white;
+}
+/* unvisited link
 a:link {
   color: white;
   text-decoration: none;
 }
 
-/* visited link */
+ visited link
 a:visited {
   color: white;
   text-decoration: none;
 }
 
-/* mouse over link */
+ mouse over link
 a:hover {
-  /*light pink*/
+  light pink
   color: #FFD6FF;
   text-decoration: none;
 }
 
-/* selected link */
+ selected link
 a:active {
-  /*light blue*/
+  light blue
   color: #99B9FF;
   text-decoration: none;
-}
+}*/
