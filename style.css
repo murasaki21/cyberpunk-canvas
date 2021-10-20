@@ -1,15 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
   /*dark blue*/
   background-color: #071369;
   color: #FFd6FF;
-  font-family:'Raleway', sans-serif;
+  font-family: 'Press Start 2P', cursive;
   padding-top: 50px;
   text-align: center;
 }
 
 header{
   color: #FFd6FF;
-  font-family:'Raleway', sans-serif;
   text-align: center;
 }
 

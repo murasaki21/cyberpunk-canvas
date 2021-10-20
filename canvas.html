@@ -3,11 +3,7 @@
   <head>
     <meta charset="utf-8">
     <script src="https://code.createjs.com/1.0.0/easeljs.min.js"></script>
-  <!--link stuff-->
     <link rel="stylesheet" type="text/css" href="style.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
   <!--bkgd stuff-->
     <style>
       body {
@@ -63,7 +59,7 @@
     		stage.addEventListener("stagemousedown", handleMouseDown);
     		stage.addEventListener("stagemouseup", handleMouseUp);
 
-    		title = new createjs.Text("begin drawing", "36px Raleway", "#FFFFFF");
+    		title = new createjs.Text("begin drawing", "36px Arial", "#FFFFFF");
     		title.x = 650;
     		title.y = 300;
     		stage.addChild(title);
