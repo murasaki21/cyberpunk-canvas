@@ -7,6 +7,14 @@ body {
   text-align: center;
 }
 
+#title{
+  font-size: 50px;
+  color: #FFd6FF;
+  text-align: center;
+  padding-top: 20%;
+  margin: auto;
+}
+
 /* unvisited link */
 a:link {
   color: white;
