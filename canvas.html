@@ -32,7 +32,7 @@
     	var index;
 
     	function init() {
-    		canvas = document.getElementById("myCanvas");
+    		canvas = document.getElementById("Canvas");
     		index = 0;
     		colors = ["white","#f848fe", "#ddadff","#ab12e2", "#4b08af", "#373fc4", "#4b8cfb", "#99B9FF"];
 
@@ -65,7 +65,7 @@
     			stage.removeChild(title);
     		}
     		color = colors[(index++) % colors.length];
-    		stroke = Math.random() * 30 + 10 | 0;
+    	  stroke = Math.random() * 10 + 5| 0;
     		oldPt = new createjs.Point(stage.mouseX, stage.mouseY);
     		oldMidPt = oldPt.clone();
     		stage.addEventListener("stagemousemove", handleMouseMove);
@@ -94,6 +94,6 @@
     </script>
 
     <body onload="init();">
-    <canvas id="myCanvas" width="1500" height="665"></canvas>
+    <canvas id="Canvas" width="1500" height="665"></canvas>
   </body>
 </html>
