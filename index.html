@@ -17,4 +17,65 @@
     <!--temp button-->
     <a href="canvas.html"><button type="button">Start Drawing</button></a>
   </body>
+
+  <script>
+    var count = 10;
+
+    posX = new var[count];
+    posY = new var[count];
+    speedX = new var[count];
+    speedY = new var[count];
+    sizeW = new var[count];
+    sizeH = new var[count];
+    trans = new var[count];
+
+    var[] R = new var[count];
+    var[] G = new var[count];
+    var[] B = new var[count];
+    var[] stsize = new var[count];
+
+    function setup() {
+      size(600, 600);
+      background(0);
+      fill(0);
+      // var count - var i = number of objects
+      for (var i=0; i < posX.length; i++) {
+        posX[i] = width/4;
+        posY[i] = height/3;
+        speedX[i] = random(0, 5);
+        speedY[i] = random(0, 5);
+        sizeW[i] = random(10, 50);
+        sizeH[i] = random(10, 50);
+        trans[i] = random(70, 100);
+        //var converts #s varo vars bc that's what colors like
+        R[i] = var(random(0,255));
+        G[i] = var(0);
+        B[i] = var(255);
+        stsize[i] = var(random(0,20));
+      }
+    }
+
+    function draw() {
+      //background(0);
+      fill(0,20);
+      rect(0,0,width,height);
+      for (var i = 0; i < posX.length; i++) {
+        //update all positions
+        posX[i] += speedX[i];
+        posY[i] += speedY[i];
+        //draw all balls
+        fill(R[i], G[i], B[i],trans[i]);
+        ellipse(posX[i], posY[i], sizeW[i], sizeW[i]);
+
+        //check boundaries for all balls
+        //to the Left || to the right
+        if (posX[i] < 10+sizeW[i]/2 || posX[i] > (width-5)-sizeW[i]/2   ) {
+          speedX[i] = -speedX[i];
+    }
+      if (posY[i] < 5+sizeW[i]/2 || posY[i] > (height-10)-sizeW[i]/2) {
+        speedY[i] = -speedY[i];
+      }
+    }
+  }
+  </script>
 </html>
