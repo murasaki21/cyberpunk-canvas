@@ -21,6 +21,7 @@ header{
  padding: 10px 20px;
  text-align: center;
  text-decoration: none;
+ font-family: 'Press Start 2P', cursive;
  display: inline-block;
  font-size: 16px;
  margin: 4px 2px;
@@ -33,7 +34,7 @@ header{
   color: white;
 }
 
-.lightButton: hover {
+.lightButton:hover {
   background-color: #ab12e2;
   color: white;
 }
@@ -43,7 +44,7 @@ header{
   color: white;
 }
 
-.darkButton: hover {
+.darkButton:hover {
   background-color: #4b08af;
   color: white;
 }
