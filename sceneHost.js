@@ -21,7 +21,6 @@ function setup() {
     // ... but needed if showNextScene() is used.
     mgr.addScene (scene1);
     mgr.addScene (scene2);
-    mgr.addScene (scene3);
 }
 
 function draw(){
@@ -44,9 +43,6 @@ function keyPressed(){
             break;
         case '2':
             mgr.showScene( scene2 );
-            break;
-        case '3':
-            mgr.showScene( scene3 );
             break;
     }
 
