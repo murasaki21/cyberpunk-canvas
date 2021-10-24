@@ -7,7 +7,7 @@
   <!--bkgd stuff-->
     <style>
       body {
-        background-image: url("images/daylife.jpg");
+        background-image: url("images/light_canvas.png");
         background-repeat: no-repeat;
         background-size: cover;
       }
@@ -19,7 +19,7 @@
   <header>
     <iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/272763982&color=%23211e17&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
     <br>
-    
+
     <a href="index.html"> <button class="button indexButton">Home </button></a>
     <br>
     <br>
@@ -31,6 +31,7 @@
 
   <body>
     <script id="editable">
+     /// scene 1: light mode ///
     	var canvas, stage;
     	var drawingCanvas;
     	var oldPt;
@@ -59,9 +60,9 @@
     		stage.addEventListener("stagemousedown", handleMouseDown);
     		stage.addEventListener("stagemouseup", handleMouseUp);
 
-    		title = new createjs.Text("begin drawing", "36px Arial", "#FFFFFF");
+    		title = new createjs.Text("begin drawing", "36px Arial", "gray");
     		title.x = 650;
-    		title.y = 300;
+    		title.y = 200;
     		stage.addChild(title);
 
     		stage.addChild(drawingCanvas);
@@ -101,6 +102,7 @@
     		stage.removeEventListener("stagemousemove", handleMouseMove);
     	}
 
+      /// scene 2: dark mode ///
     </script>
 
     <body onload="init();">
