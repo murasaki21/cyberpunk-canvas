@@ -88,7 +88,7 @@ function touchMoved() {
 function init() {
   canvas = document.getElementById("Canvas");
   index = 0;
-  colors = ["black", "#f848fe", "#ddadff", "#ab12e2", "#4b08af", "#373fc4", "#4b8cfb", "#99B9FF"];
+  colors = ["#f848fe", "#ddadff", "#ab12e2", "#4b08af", "#373fc4","black", "#4b8cfb", "#99B9FF", "white"];
 
   //check to see if we are running in a browser with touch support
   stage = new createjs.Stage(canvas);
@@ -104,7 +104,7 @@ function init() {
   stage.addEventListener("stagemouseup", handleMouseUp);
 
   title = new createjs.Text("begin drawing", "30px 'Press Start 2P', cursive", "gray");
-  title.x = 650;
+  title.x = 570;
   title.y = 300;
   stage.addChild(title);
 
@@ -133,7 +133,7 @@ function handleMouseMove(event) {
   }
   var midPt = new createjs.Point(oldPt.x + stage.mouseX >> 1, oldPt.y + stage.mouseY >> 1);
 
-  drawingCanvas.graphics.clear().setcanvasStrokeStyle(canvasStroke, 'square', 'square').begincanvasStroke(canvasColor).moveTo(midPt.x, midPt.y).curveTo(oldPt.x, oldPt.y, oldMidPt.x, oldMidPt.y);
+  drawingCanvas.graphics.clear().setStrokeStyle(canvasStroke, 'square', 'square').beginStroke(canvasColor).moveTo(midPt.x, midPt.y).curveTo(oldPt.x, oldPt.y, oldMidPt.x, oldMidPt.y);
 
   oldPt.x = stage.mouseX;
   oldPt.y = stage.mouseY;
