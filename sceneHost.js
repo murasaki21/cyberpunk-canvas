@@ -1,3 +1,5 @@
+
+//NOT USING
 var bkgd1;
 var bkgd2;
 
