@@ -39,10 +39,17 @@ function draw() {
       strokeWeight: 0,
       fillBgOff: color("#ddadff"),
       fillLabelOff: color("#FFFFFF"),
-      fillBgOn: color("#FFFFFF"),
       rounding: 10,
       textSize: 15,
       font:'"Press Start 2P", cursive',
+
+      //hover Button
+      fillBgOffHover: color("#373fc4"),
+      fillLabelOffHover: color("#FFFFFF"),
+
+      //Dark Mode On button
+      fillBgOn: color("#373fc4"),
+      fillLabelOn: color("#FFFFFF"),
   });
 
   if (switchToDark.isPressed) {
