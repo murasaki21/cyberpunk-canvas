@@ -10,8 +10,8 @@ var drawingCanvas;
 var oldPt;
 var oldMidPt;
 var title;
-var color;
-var stroke;
+var canvasColor;
+var canvasStroke;
 var colors;
 var index;
 
@@ -78,7 +78,7 @@ function touchMoved() {
 }
 
 ///////Canvas code
-/*function init() {
+function init() {
   canvas = document.getElementById("Canvas");
   index = 0;
   colors = ["black", "#f848fe", "#ddadff", "#ab12e2", "#4b08af", "#373fc4", "#4b8cfb", "#99B9FF"];
