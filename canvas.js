@@ -33,7 +33,7 @@ function scene1() {
       function init() {
         canvas = document.getElementById("Canvas");
         index = 0;
-        colors = ["white", "#f848fe", "#ddadff", "#ab12e2", "#4b08af", "#373fc4", "#4b8cfb", "#99B9FF"];
+        colors = ["black", "#f848fe", "#ddadff", "#ab12e2", "#4b08af", "#373fc4", "#4b8cfb", "#99B9FF"];
 
         //check to see if we are running in a browser with touch support
         stage = new createjs.Stage(canvas);
