@@ -103,7 +103,7 @@ function init() {
   stage.addEventListener("stagemousedown", handleMouseDown);
   stage.addEventListener("stagemouseup", handleMouseUp);
 
-  title = new createjs.Text("begin drawing", "36px Arial", "gray");
+  title = new createjs.Text("begin drawing", "30px 'Press Start 2P', cursive", "gray");
   title.x = 650;
   title.y = 300;
   stage.addChild(title);
