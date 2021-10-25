@@ -15,7 +15,8 @@ var canvasStroke;
 var colors;
 var index;
 
-//////toggle button code
+//////toggle button code///////
+
 function preload(){
   bkgd1 = loadImage("images/light_canvas.png");
   bkgd2 = loadImage("images/dark_canvas.png");
@@ -82,7 +83,8 @@ function touchMoved() {
   return false;
 }
 
-///////Canvas code
+///////Canvas code//////////
+
 function init() {
   canvas = document.getElementById("Canvas");
   index = 0;
