@@ -50,7 +50,7 @@ function scene1() {
 
         title = new createjs.Text("begin drawing", "36px Arial", "gray");
         title.x = 650;
-        title.y = 200;
+        title.y = 300;
         stage.addChild(title);
 
         stage.addChild(drawingCanvas);
@@ -192,7 +192,7 @@ function scene2() {
 
       title = new createjs.Text("begin drawing", "36px Arial", "gray");
       title.x = 650;
-      title.y = 200;
+      title.y = 300;
       stage.addChild(title);
 
       stage.addChild(drawingCanvas);
