@@ -2,9 +2,8 @@ var bkgd1;
 var bkgd2;
 
 function preload() {
-
-   bkgd1 = loadImage("imgs/light_canvas.png");
-   bkgd2 = loadImage("imgs/dark_canvas.png");
+   bkgd1 = loadImage("images/light_canvas.png");
+   bkgd2 = loadImage("images/dark_canvas.png");
 }
 
 // define your p5.play sprites as global objects first.
@@ -13,10 +12,9 @@ function preload() {
 var mgr;
 
 function setup() {
-    createCanvas(1920,1080);
-    //console.log(hell);
+    //createCanvas(1510, 670);
+    //createCanvas(1920,1080);
      mgr = new SceneManager();
-     masterVolume(.05);
     // Preload scenes. Preloading is normally optional
     // ... but needed if showNextScene() is used.
     mgr.addScene (scene1);
@@ -24,7 +22,6 @@ function setup() {
 }
 
 function draw(){
-
     // passthe current draw function into the SceneManager
     mgr.draw();
 }
@@ -35,7 +32,6 @@ function mousePressed(){
 }
 
 function keyPressed(){
-    // You can optionaly handle the key press at global level...
     switch(key)
     {
         case '1':
