@@ -46,6 +46,8 @@ function draw() {
       //hover Button to Dark
       fillBgOffHover: color("#373fc4"),
       fillLabelOffHover: color("#FFFFFF"),
+
+      //Shift to dark
       fillBgOffActive: color("#373fc4"),
       fillLabelOffActive: color("FFFFFF"),
 
@@ -56,6 +58,8 @@ function draw() {
       //hover Button to Light
       fillBgOnHover: color("#ddadff"),
       fillLabelOnHover: color("#FFFFFF"),
+
+      //shift to light
       fillBgOnActive: color("#ddadff"),
       fillLabelOnActive: color("FFFFFF"),
   });
