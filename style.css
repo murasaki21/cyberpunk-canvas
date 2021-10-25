@@ -40,7 +40,7 @@ header{
 }
 
 /*changes to dark mode*/
-/*.lightModeButton{
+.lightModeButton{
   background-color: #ddadff;
   color: white;
 }
@@ -58,10 +58,10 @@ header{
 .darkButton:hover {
   background-color: #4b08af;
   color: white;
-}*/
+}
 
 /*changes to light mode*/
-/*.darkModeButton{
+.darkModeButton{
   background-color: #373fc4;
   color: white;
 }
@@ -69,30 +69,4 @@ header{
 .darkModeButton:hover {
   background-color: #ddadff;
   color: white;
-}*/
-
-/* unvisited link
-a:link {
-  color: white;
-  text-decoration: none;
 }
-
- visited link
-a:visited {
-  color: white;
-  text-decoration: none;
-}
-
- mouse over link
-a:hover {
-  light pink
-  color: #FFD6FF;
-  text-decoration: none;
-}
-
- selected link
-a:active {
-  light blue
-  color: #99B9FF;
-  text-decoration: none;
-}*/
