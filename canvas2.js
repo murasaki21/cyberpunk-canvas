@@ -113,8 +113,8 @@ function handleMouseDown(event) {
     stage.clear();
     stage.removeChild(title);
   }
-  color = colors[(index++) % colors.length];
-  stroke = 10;
+  canvasColor = colors[(index++) % colors.length];
+  canvasStroke = 10;
   oldPt = new createjs.Point(stage.mouseX, stage.mouseY);
   oldMidPt = oldPt.clone();
   stage.addEventListener("stagemousemove", handleMouseMove);
@@ -126,7 +126,7 @@ function handleMouseMove(event) {
   }
   var midPt = new createjs.Point(oldPt.x + stage.mouseX >> 1, oldPt.y + stage.mouseY >> 1);
 
-  drawingCanvas.graphics.clear().setStrokeStyle(stroke, 'square', 'square').beginStroke(color).moveTo(midPt.x, midPt.y).curveTo(oldPt.x, oldPt.y, oldMidPt.x, oldMidPt.y);
+  drawingCanvas.graphics.clear().setcanvasStrokeStyle(canvasStroke, 'square', 'square').begincanvasStroke(canvasColor).moveTo(midPt.x, midPt.y).curveTo(oldPt.x, oldPt.y, oldMidPt.x, oldMidPt.y);
 
   oldPt.x = stage.mouseX;
   oldPt.y = stage.mouseY;
