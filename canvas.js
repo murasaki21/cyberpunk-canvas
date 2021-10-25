@@ -1,5 +1,6 @@
 ////////////////////////////// 1 /////////////////
 function scene1() {
+  //createjs vars
   var canvas, stage;
   var drawingCanvas;
   var oldPt;
@@ -9,6 +10,7 @@ function scene1() {
   var stroke;
   var colors;
   var index;
+  //p5.clickable button var
   var switchButton;
 
     // enter() will be called each time SceneManager switches
@@ -96,14 +98,13 @@ function scene1() {
       }
 
   this.setup = function() {
-    console.log("Light Canvas");
-    image(bkgd1, 0, 0);
+    //console.log("Light Canvas");
+    //image(bkgd1, 0, 0);
     switchButton = new Clickable(); //Create button
     switchButton.x = 300;
     switchButton.y = 190;
     switchButton.resize(150, 80);
     switchButton.onOutside = function() {
-      //console.log("Hey! Press me!");
       this.color = "#ddadff";
       switchButton.strokeWeight = 0; //Stroke width of the clickable (float)
       switchButton.textFont = "Press Start 2P"; //Font of the text (string)
