@@ -6,8 +6,6 @@ function preload() {
    bkgd2 = loadImage("images/dark_canvas.png");
 }
 
-// define your p5.play sprites as global objects first.
-
 // global manager object
 var mgr;
 
@@ -32,8 +30,7 @@ function mousePressed(){
 }
 
 function keyPressed(){
-    switch(key)
-    {
+    switch(key){
         case '1':
             mgr.showScene( scene1 );
             break;
