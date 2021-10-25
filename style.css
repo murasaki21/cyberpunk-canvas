@@ -38,35 +38,3 @@ header{
   background-color: #ab12e2;
   color: white;
 }
-
-/*changes to dark mode*/
-.lightModeButton{
-  background-color: #ddadff;
-  color: white;
-}
-
-.lightModeButton:hover {
-  background-color: #373fc4;
-  color: white;
-}
-
-.darkButton{
-  background-color: #373fc4;
-  color: white;
-}
-
-.darkButton:hover {
-  background-color: #4b08af;
-  color: white;
-}
-
-/*changes to light mode*/
-.darkModeButton{
-  background-color: #373fc4;
-  color: white;
-}
-
-.darkModeButton:hover {
-  background-color: #ddadff;
-  color: white;
-}
