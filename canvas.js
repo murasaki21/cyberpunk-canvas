@@ -28,8 +28,7 @@ function scene1() {
       fill(0, 255, 0);
     }
   }
-
-
+    //canvas code
       function init() {
         canvas = document.getElementById("Canvas");
         index = 0;
