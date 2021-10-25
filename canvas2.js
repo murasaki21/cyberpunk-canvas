@@ -26,13 +26,13 @@ function setup() {
   image(bkgd1, 0, 0);
   gui = createGui();
   // Create toggle button (x,y,width,height)
-  switchToDark = createToggle("Switch to Dark", 630, 0, 250, 40);
+  switchToDark = createToggle("Switch to Dark", 630, 5, 250, 40);
 }
 
 function draw() {
   background(7, 19, 105);
   drawGui();
-  image(bkgd1, 0, 50);
+  image(bkgd1, 0, 55);
 
   switchToDark.setStyle({
       //default button
@@ -43,13 +43,21 @@ function draw() {
       textSize: 15,
       font:'"Press Start 2P", cursive',
 
-      //hover Button
+      //hover Button to Dark
       fillBgOffHover: color("#373fc4"),
       fillLabelOffHover: color("#FFFFFF"),
+      fillBgOffActive: color("#373fc4"),
+      fillLabelOffActive: color("FFFFFF"),
 
       //Dark Mode On button
       fillBgOn: color("#373fc4"),
       fillLabelOn: color("#FFFFFF"),
+
+      //hover Button to Light
+      fillBgOnHover: color("#ddadff"),
+      fillLabelOnHover: color("#FFFFFF"),
+      fillBgOnActive: color("#ddadff"),
+      fillLabelOnActive: color("FFFFFF"),
   });
 
   if (switchToDark.isPressed) {
@@ -59,7 +67,7 @@ function draw() {
   if (switchToDark.val) {
     // Draw an ellipse when Checkbox is true.
     fill(255, 0, 0);
-    image(bkgd2, 0, 50);
+    image(bkgd2, 0, 55);
   }
 }
 
