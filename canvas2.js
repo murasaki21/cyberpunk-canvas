@@ -34,6 +34,7 @@ function draw() {
   drawGui();
   image(bkgd1, 0, 55);
 
+  //button styling
   switchToDark.setStyle({
       //default button
       strokeWeight: 0,
@@ -69,7 +70,7 @@ function draw() {
   }
 
   if (switchToDark.val) {
-    // Draw an ellipse when Checkbox is true.
+    // switch to darkCanvas
     fill(255, 0, 0);
     image(bkgd2, 0, 55);
   }
