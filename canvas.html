@@ -12,15 +12,6 @@
       <script src="canvas2.js"></script>
     <!--css-->
     <link rel="stylesheet" type="text/css" href="style.css"/>
-  <!--bkgd stuff-->
-    <!--<style>
-      body {
-        background-image: url("images/light_canvas.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-    </style>-->
-
     <title>Canvas</title>
   </head>
 
@@ -28,91 +19,15 @@
       <iframe width="100%" height="100" src="https://www.youtube-nocookie.com/embed/bYeEv0B3-iM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <br>
     <br>
+      <p> ^ some music to listen to while drawing if you want^</p>  
+      <p> *the images at the bottom should be the background for drawing (and users can toggle which background they want). But I cannot get the code to work at all and there were also no errors are showing up on the console.</p>
 
   <a href="index.html"> <button class="button indexButton">Home </button></a>
-  <!--  <br>
-    <br>
-    <a href="canvas.html"> <button class="button indexButton">Refresh </button></a>
-    <br>
-    <br>
-    <a href="darkCanvas.html"> <button class="button lightModeButton">Switch to Dark Mode </button></a>-->
   </header>
 
   <body>
-    <!--<script id="editable">
-    	var canvas, stage;
-    	var drawingCanvas;
-    	var oldPt;
-    	var oldMidPt;
-    	var title;
-    	var color;
-    	var stroke;
-    	var colors;
-    	var index;
-
-    	function init() {
-    		canvas = document.getElementById("Canvas");
-    		index = 0;
-    		colors = ["#f848fe", "#ddadff", "#ab12e2", "#4b08af", "#373fc4","black", "#4b8cfb", "#99B9FF", "white"];
-
-    		//check to see if we are running in a browser with touch support
-    		stage = new createjs.Stage(canvas);
-    		stage.autoClear = false;
-    		stage.enableDOMEvents(true);
-
-    		createjs.Touch.enable(stage);
-    		createjs.Ticker.framerate = 24;
-
-    		drawingCanvas = new createjs.Shape();
-
-    		stage.addEventListener("stagemousedown", handleMouseDown);
-    		stage.addEventListener("stagemouseup", handleMouseUp);
-
-    		title = new createjs.Text("begin drawing", "36px Arial", "gray");
-    		title.x = 650;
-    		title.y = 200;
-    		stage.addChild(title);
-
-    		stage.addChild(drawingCanvas);
-    		stage.update();
-    	}
-
-    	function handleMouseDown(event) {
-    		if (!event.primary) { return; }
-    		if (stage.contains(title)) {
-    			stage.clear();
-    			stage.removeChild(title);
-    		}
-    		color = colors[(index++) % colors.length];
-    	  stroke = 10;
-    		oldPt = new createjs.Point(stage.mouseX, stage.mouseY);
-    		oldMidPt = oldPt.clone();
-    		stage.addEventListener("stagemousemove", handleMouseMove);
-    	}
-
-    	function handleMouseMove(event) {
-    		if (!event.primary) { return; }
-    		var midPt = new createjs.Point(oldPt.x + stage.mouseX >> 1, oldPt.y + stage.mouseY >> 1);
-
-    		drawingCanvas.graphics.clear().setStrokeStyle(stroke, 'square', 'square').beginStroke(color).moveTo(midPt.x, midPt.y).curveTo(oldPt.x, oldPt.y, oldMidPt.x, oldMidPt.y);
-
-    		oldPt.x = stage.mouseX;
-    		oldPt.y = stage.mouseY;
-
-    		oldMidPt.x = midPt.x;
-    		oldMidPt.y = midPt.y;
-
-    		stage.update();
-    	}
-
-    	function handleMouseUp(event) {
-    		if (!event.primary) { return; }
-    		stage.removeEventListener("stagemousemove", handleMouseMove);
-    	}
-    </script>-->
-
     <body onload="init();">
     <canvas id="Canvas" width="1500" height="800"></canvas>
-    <p> *the images on the bottom should be the background for drawing (and users can toggle which background they want). But I cannot get the code to work at all and there were also no errors are showing up on the console.</p>
+
   </body>
 </html>
